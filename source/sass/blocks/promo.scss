@@ -1,0 +1,164 @@
+.promo {
+  box-sizing: border-box;
+  width: 81.25vw;
+  margin: 0 auto;
+  padding-left: 5.9vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // padding-top: 110px;
+}
+
+.promo__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 48px;
+  line-height: 55px;
+  color: #282828;
+  font-weight: 300;
+
+  @media (max-width: 1620px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.promo__features-list {
+  margin: 0;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  padding: 0;
+
+  order: 1;
+}
+
+.promo__feature {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.promo__list-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+
+  border-radius: 50%;
+  background-color: #f7f7fb;
+  box-shadow: 1px 0 13px 0 rgba(239, 148, 153, 0.38);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ef9499;
+  }
+}
+
+.promo__sign-up-button {
+  margin-top: -50px;
+  order: 3;
+}
+
+.promo__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 755px;
+}
+
+@media (max-width: 1100px) {
+  .promo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .promo__title {
+    width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+
+  .promo__wrapper {
+    display: block;
+    width: auto;
+    margin-right: 0;
+  }
+
+  .promo__card {
+    display: inline-block;
+  }
+
+  .promo__features {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 500px;
+  }
+
+  .promo__sign-up-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+}
+
+
+@media (max-width: 990px) {
+  .promo {
+    padding-top: 0;
+  }
+
+  .promo__title {
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .promo__feature {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .promo__features {
+    width: 100%;
+  }
+
+  .promo__sign-up-button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .promo__sign-up-button {
+    padding: 0 10px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

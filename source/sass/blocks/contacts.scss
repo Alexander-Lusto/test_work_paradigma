@@ -1,0 +1,73 @@
+.contacts__accessibly {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: #27b24b;
+    border-radius: 50%;
+    box-shadow: 0 0 7px 0 rgba(79, 160, 55, 0.61);
+  }
+}
+
+.contacts__phone-number {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.contacts__call {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    background-image: url("../img/phone_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__time {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    background-image: url("../img/time_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__work-schedule {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700px;
+}

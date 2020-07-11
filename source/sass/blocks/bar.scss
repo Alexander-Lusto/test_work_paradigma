@@ -1,0 +1,84 @@
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: transparent;
+
+  @media (max-width: 990px) {
+    order: 2;
+  }
+}
+
+.bar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48.5vw;
+
+  @media (max-width: 1620px) {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+}
+
+.bar__map,
+.bar__contacts {
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+.bar__button {
+  box-sizing: border-box;
+  min-width: 170px;
+  //width: 11.875vw;
+  width: 228px;
+  min-height: 60px;
+  padding-left: 50px;
+  padding-right: 15px;
+  border: none;
+
+  border-radius: 30px;
+  background-color: #fefcfb;
+  background-image: url("../img/calendar_icon.png");
+  background-repeat: no-repeat;
+  background-position: center left 26px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #1f1d1d;
+
+  box-shadow: 0 3px 0 0 #ebeaea;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 0 0 #ebeaea, 0 10px 35px 10px rgba(241, 131, 131, 0.57);
+  }
+}
+
+@media (max-width: 990px) {
+  .bar__wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .bar__map,
+  .bar__contacts,
+  .bar__button {
+    margin-bottom: 30px;
+  }
+
+  .bar__contacts {
+    margin-bottom: 40px;
+  }
+
+  .bar__button {
+    //width: 250px;
+  }
+}

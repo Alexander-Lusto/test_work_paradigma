@@ -1,0 +1,83 @@
+.button {
+  position: relative;
+  padding-left: 35px;
+  padding-right: 155px;
+  width: 379px;
+  height: 85px;
+  background-color: #f6a9ab;
+  background-image: linear-gradient(to top, #ef8c92 0%, #f8b5b5 100%);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 0 0 #d7747a, 0 10px 27px 0 rgba(241, 131, 131, 0.57);
+
+  font-family: "Museo Sans Cyrl", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -130px;
+    display: inline-block;
+    width: 273px;
+    height: 74px;
+    background-image: url("../img/branch.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 71px;
+    right: -120px;
+    display: inline-block;
+    width: 273px;
+    height: 10px;
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 0 0 #d7747a, 0 10px 35px 10px rgba(241, 131, 131, 0.57);
+  }
+}
+
+.button--flower {
+  width: 100%;
+  height: 70px;
+
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: -13px;
+    display: inline-block;
+    width: 143px;
+    height: 52px;
+    background-image: url("../img/flower.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 57px;
+    right: -67px;
+    display: inline-block;
+    width: 199px;
+    height: 7px;
+    background-image: url("../img/flower_shadow.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}

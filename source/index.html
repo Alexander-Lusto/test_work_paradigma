@@ -3,9 +3,165 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Paradigma</title>
+    <title>Pincet</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
+  <body>
+    <section class="preview">
+      <section class="preview__scene">
+        <div class="preview__layer preview__layer-bg" data-depth="0.0"></div>
+        <div class="preview__layer preview__layer-1" data-depth="0.6"></div>
+        <div class="preview__layer preview__layer-2" data-depth="0.2"></div>
+      </section>
+
+      <header class="preview__header header">
+        <div class="header__bar bar">
+          <!-- block logo -->
+          <div class="bar__logo logo">
+            <img class="logo__image" src="img/header_logo.png" width="280" height="126" alt="logotype">
+            <p class="logo__desc">Студия депиляции и массажный кабинет в Бресте</p>
+          </div>
+          <div class="bar__wrapper">
+            <!-- block map -->
+            <div class="bar__map map">
+              <div class="map__wrapper">
+                <p class="map__address">
+                  Мы находимся в центре: <br>
+                  г. Брест, ул. Гоголя, д.65
+                </p>
+                <a class="map__link" href="https://goo.gl/maps/c8j6x1NHrqtnZHATA" target="_blank">
+                  Смотреть на карте
+                  <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.251323816383!2d23.696079115941263!3d52.09335747551118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGC!5e0!3m2!1sru!2sby!4v1594220901429!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </a>
+              </div>
+            </div>
+            <!-- block contacts -->
+            <div class="bar__contacts contacts">
+              <div class="contacts__call">
+                <div class="contacts__text-wrapper">
+                  <p class="contacts__accessibly">Звоните, мы сейчас работаем</p>
+                  <p class="contacts__phone-number">+375 33 382 24 99</p>
+                </div>
+              </div>
+              <div class="contacts__time">
+                <p class="contacts__work-schedule">Пн-Вс 9:00-21:00</p>
+              </div>
+            </div>
+            <!-- block sign up -->
+            <button class="bar__button">Записаться онлайн</button>
+          </div>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__list-item menu__list-item--active">
+              <a class="menu__link" href="#главная">Главная</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="paralaks.html">Шугаринг и депиляция воском</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#антицеллюлитный_массаж">Антицеллюлитный массаж</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#классический_массаж">Классический массаж</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#обучение">Обучение</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#косметика_для_мастеров">Косметика для мастеров</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#статьи">Статьи</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#о_студии">О студии</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#контакты">Контакты</a>
+            </li>
+          </ul>
+          <img class="menu__mobile" src="img/icon-menu.svg" width="30" height="15" alt="mobile menu">
+          <img class="menu__cross hidden" src="img/icon-cross-black.svg" width="30" height="15" alt="close menu">
+        </nav>
+      </header>
+      <section class="preview__promo promo">
+        <h1 class="promo__title">
+          Хотите избавиться от<br>
+          <strong>нежелательных волос</strong><br>
+          или нужен сеанс<br>
+          <strong>антицеллюлитного массажа?</strong><br>
+        </h1>
+        <div class="promo__wrapper">
+          <div class="promo__features">
+            <ul class="promo__features-list">
+              <li class="promo__feature">
+                <span class="promo__list-item"></span>
+                депиляция воском и Шугаринг;
+              </li>
+              <li class="promo__feature">
+                <span class="promo__list-item"></span>
+                профессиональные сертифицированные мастера;
+              </li>
+              <li class="promo__feature">
+                <span class="promo__list-item"></span>
+                работаем и с женщинами, и с мужчинами;
+              </li>
+              <li class="promo__feature">
+                <span class="promo__list-item"></span>
+                результат уже после первой процедуры.
+              </li>
+            </ul>
+          </div>
+          <div class="promo__card card">
+            <img class="card__image" src="img/card.png" width="176" height="236" alt="client's card">
+            <button class="card__button">i</button>
+            <div class="card__popup">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            </div>
+          </div>
+          <button class="promo__sign-up-button button">ПОЛУЧИТЬ КАРТУ <br> КЛИЕНТА БЕСПЛАТНО</button>
+        </div>
+
+      </section>
+
+      <div class="popup hidden">
+        <h1 class="popup__title"><strong>Получите </strong> программу обучения</h1>
+        <p class="popup__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+        <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
+          <!-- <input class="popup__input" type="text" name="qualification" placeholder="Повышение квалификации"> -->
+          <select class="popup__input popup__input--select" name="select"> <!--Supplement an id here instead of using 'name'-->
+            <option value="value1" selected>Повышение квалификации</option>
+            <option value="value2">Повышение квалификации уровень 2</option>
+            <option value="value3">Повышение квалификации уровень 3</option>
+          </select>
+          <input class="popup__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="popup__input" type="phone" name="phone" placeholder="Ваш номер телефона" required>
+          <button class="popup__button button button--flower"> Получить программу </button>
+        </form>
+        <button class="popup__close-btn close-btn"></button>
+      </div>
+
+      <div class="popup__success-message success-message hidden">
+        <span class="success_message__checkbox"></span>
+        <h2 class="success-message__title">
+          <b>Ваш заказ принят.</b> <br>
+              Ожидайте звонка
+        </h2>
+        <button class="success-message__close-btn close-btn"></button>
+      </div>
+
+
+
+      <div class="preview__background-girl"></div>
+      <div class="preview__background-wave">
+        <button class="preview__next-page-btn"></button>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

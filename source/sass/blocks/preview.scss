@@ -1,0 +1,48 @@
+.preview {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+  min-height: 900px;
+  overflow-x: hidden;
+
+  @media (max-width: 1700px) {
+    width: 100vw;
+    min-height: 1100px;
+  }
+}
+
+.preview__next-page-btn {
+  display: block;
+  margin: 15px auto;
+  width: 130px;
+  height: 130px;
+  background-color: transparent;
+  background-image: url("../img/bottom_arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.preview__background-wave {
+  background-image: url("../img/wave.png");
+  background-repeat: repeat-x;
+  background-position: center bottom -60px;
+  background-size: cover;
+  position: absolute;
+
+  height: 160px;
+  width: 100vw;
+  right: 0;
+  bottom: 0;
+}
+
+
+@media (max-width: 1100px) {
+  .preview {
+    width: 100%;
+    height: 100%;
+  }
+}

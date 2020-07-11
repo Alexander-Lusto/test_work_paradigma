@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1620px) {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.logo__image {
+  margin-right: 40px;
+}
+
+.logo__desc {
+  font-size: 15px;
+  font-weight: 300;
+  width: 145px;
+
+  @media (max-width: 990px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
